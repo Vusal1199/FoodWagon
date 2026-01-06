@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+header .logo {
+    width: 170px;
+    height: 200px;
+}
+
+header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+header .location {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header .location b {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+header .location span {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+header .location i {
+    color: #ffae00;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+header .search-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+header .search-login .search i {
+    color: #ffae00;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+header .search-login .search span {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+}
+
+
+header .search-login .login {
+    width: 100px;
+    height: 42px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    box-shadow: 1px 2px 15px #ffae00;
+}
+
+header .search-login .login i {
+    color: #ffae00;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .search-login .login span {
+    color: #ffae00;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Home Hissəsi */
+
+/* SiteHome Hissəsi */
+
+.home {
+    background: linear-gradient(#FFCC00, #FFB100);
+    width: 100%;
+    height: 75vh;
+}
+
+.home .home-inset {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 200px;
+    top: 180px;
+}
+
+.home .home-inset h1 {
+    color: #fff;
+    font-size: 85px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.home .home-inset .in-span {
+    color: rgb(66, 66, 66);
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.home .input-deliver {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 800px;
+    height: 200px;
+}
+
+.home .input-deliver .deliver-type {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px 40px;
+}
+
+.home .input-deliver .deliver-type .moto {
+    width: 160px;
+    height: 35px;
+    background-color: #ffd5d5eb;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.home .input-deliver .deliver-type .moto i {
+    color: #f17228;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.home .input-deliver .deliver-type .moto span {
+    color: #f17228;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.home .deliver-type .packet {
+    width: 160px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.home .deliver-type .packet i {
+    color: #757575;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.home .deliver-type .packet span {
+    color: #757575;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.home .deliver-type hr {
+    background-color: #757575;
+    height: 0.5px;
+}
+
+.home .input-deliver .input-btn {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.home .input-deliver .input-btn .input-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.home .input-deliver .input-btn .input-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff8059;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.home .input-deliver .input-btn .input-container input {
+    width: 120%;
+    padding: 15px 15px 15px 45px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-container input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 45px;
+
+}
+
+.home .input-deliver .input-btn .btn {
+    width: 200px;
+    height: 55px;
+    border: none;
+    background-color: #ff8059;
+    border-radius: 10px;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.home .input-deliver .input-btn .btn i {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.home .input-deliver .input-btn .btn span {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Menu Hissəsi */
+.menu {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .item .image {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.menu .item .image img {
+    width: 80%;
+    height: 60%;
+    display: block;
+}
+
+.menu .item .image .price {
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    background-color: #FFB30E;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-top-right-radius: 20px;
+}
+
+.menu .item .image .price .number {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu .item .image .price .price-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    margin-left: 5px;
+}
+
+.menu .item .image .price .price-sub span {
+    display: block;
+    font-weight: bold;
+}
+
+.menu .item .image .price .price-sub span:first-child {
+    font-size: 20px;
+}
+
+.price-sub span:last-child {
+    font-size: 20px;
+    text-transform: lowercase;
+}
+
+.menu .item .image .sub-context {
+    position: relative;
+    top: 20px;
+}
+
+.menu .item .image .sub-context b {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 35px;
+    padding-bottom: 100px;
+}
+
+.menu .item .image .sub-context .button-click {
+    width: 150px;
+    height: 34px;
+    background-color: #ffd5d5ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 6px;
+    color: #ff8059;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* How-work Hissəsi */
+.how-work {
+    width: 100%;
+    height: 84vh;
+    background: linear-gradient(#fee8e8ee, #fff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-work h1 {
+    margin-top: 50px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #f17228;
+}
+
+.how-work .sub-work {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-work .sub-work .item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+
+.how-work .sub-work .item .icon {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.how-work .sub-work .item .icon i {
+    color: #f17228;
+    font-size: 150px;
+    text-shadow: 1px 5px 20px #f1722898;
+}
+
+/* İkinci İtem Xüsusi Özəllik Vermək */
+
+.how-work .sub-work .item:nth-child(2) .icon {
+    background: linear-gradient(#f17228, #ff8036);
+    border-radius: 10px;
+    width: 140px;
+    height: 200px;
+    box-shadow: 10px 10px 5px #f1722875;
+}
+
+.how-work .sub-work .item:nth-child(2) .icon i {
+    color: #fff;
+    font-size: 100px;
+}
+
+
+.how-work .sub-work .item h3 {
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.how-work .sub-work .item span {
+    width: 60%;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #f17228;
+    font-size: 18px;
+}
+
+.pop-item {
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+.pop-item h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pop-item .food-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 50px;
+}
+
+.pop-item .food-items .item {
+    width: 250px;
+    height: 400px;
+    margin-left: 20px;
+
+}
+
+/* Arrwow Hissəsi */
+
+.pop-item .food-items .item .arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f17228;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.pop-item .food-items .item:nth-child(1) .arrow {
+    margin-left: 140px;
+}
+
+.pop-item .food-items .item .arrow i {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pop-item .food-items .item .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.pop-item .food-items .item .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.pop-item .food-items .item .context {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pop-item .food-items .item .context b {
+    color: #050505e2;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.pop-item .food-items .item .context .sub-context {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #f17228;
+    font-size: 18px;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pop-item .food-items .item .context span {
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+.pop-item .food-items .item .context button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff8036;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* Restorant Hissəsi */
+.restaurant {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.restaurant h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.restaurant .sub-restaurant {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.restaurant .sub-restaurant .item {
+    width: 300px;
+    height: 400px;
+}
+
+.sub-restaurant .item .image {
+    width: 250px;
+    height: 200px;
+}
+
+.sub-restaurant .item .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.sub-restaurant .item .image .sub-info-1 {}
+
+.sub-restaurant .item .context {
+    width: 250px;
+    height: 200px;
+}
+
+.sub-restaurant .item .context img {
+    width: 70px;
+    height: 70px;
+}
