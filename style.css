@@ -1,3 +1,5 @@
+/* Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
@@ -9,6 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
 
 * {
     margin: 0;
@@ -111,7 +115,6 @@ header .search-login .login span {
     font-weight: bold;
 }
 
-/* Home Hissəsi */
 
 /* SiteHome Hissəsi */
 
@@ -615,6 +618,7 @@ header .search-login .login span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 150px;
 }
 
 
@@ -644,16 +648,558 @@ header .search-login .login span {
 .sub-restaurant .item .image img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
 }
 
-.sub-restaurant .item .image .sub-info-1 {}
+.sub-restaurant .item .image .sub-info-1 {
+    position: relative;
+    background-color: #f17228;
+    width: 80px;
+    bottom: 195px;
+    left: 20px;
+    border-radius: 5px;
+    padding: 3px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.sub-restaurant .item .image .sub-info-2 {
+    position: relative;
+    background-color: #ffae00;
+    width: 60px;
+    bottom: 220px;
+    left: 120px;
+    padding: 3px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
 
 .sub-restaurant .item .context {
     width: 250px;
-    height: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
+
 .sub-restaurant .item .context img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.sub-restaurant .item .context span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #000000b5;
+}
+
+
+.sub-restaurant .item .context .sc-down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.sub-restaurant .item .context .sc-down i {
+    font-size: 18px;
+    color: #ffae00;
+}
+
+.sub-restaurant .item .context .sc-down span {
+    font-size: 18px;
+    color: #ffae00;
+    font-weight: 800;
+
+}
+
+.sub-restaurant .item:nth-child(1) button {
+    background-color: #f98d6c9d;
+    height: auto;
+    width: auto;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #f17228;
+}
+
+
+.sub-restaurant .item:nth-child(2) button {
+    background-color: #f98d6c9d;
+    height: auto;
+    width: auto;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #f17228;
+}
+
+
+.sub-restaurant .item button {
+    background-color: #e1e1e19d;
+    height: auto;
+    width: auto;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #00d841e2;
+}
+
+/* View All Hissəsi */
+
+.restaurant .sub-restaurant .view-all {
+    position: relative;
+    left: 1000px;
+    background-color: #ff8036;
+    width: 150px;
+    height: auto;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 1px 5px 5px #f1722883;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Search Food Hissəsi */
+
+.search-food {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 28%;
+    gap: 70px;
+    background-color: #ffe1d8;
+    padding: 70px 0;
+}
+
+.search-food h1 {
+    font-size: 60px;
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    text-align: left;
+    padding-bottom: 35px;
+    margin-left: 120px;
+}
+
+.search-food article.page-scrool {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-left: 65%;
+    margin-top: -170px;
+}
+
+
+.search-food article.page-scrool .p-view {
+    max-width: 130px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffae00;
+    border-radius: 10px;
+}
+
+
+.search-food article.page-scrool .pre-next {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.search-food article.page-scrool .pre-next .pre {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffae00;
+    box-shadow: -1px 6px 10px #f17228c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-food article.page-scrool .pre-next .next {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffae00;
+    box-shadow: -1px 6px 10px #f17228c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-food article.page-scrool .pre-next .pre,
+.next i {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.item-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.item-box .item {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17px;
+    gap: 20px;
+}
+
+
+.item-box .item .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.item-box .item .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.item-box .item span {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+/* Application Hissəsi */
+.app {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    padding: 0 55px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEEFD3;
+}
+
+.app .app-barner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-left: 240px;
+}
+
+.app .app-barner .item {
+    width: 250px;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.app .app-barner .item .image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .app-barner .item .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.app .app-barner .item .context {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.1;
+    background: linear-gradient(to bottom, #FFB30E 0%, #FF8A00 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.app .app-barner .item hr {
+    width: 3px;
+    height: 100px;
+    background-color: #7575758e;
+    margin-left: 35px;
+    border: none;
+    outline: none;
+}
+
+/* ======= Application`un Barner Hissəsini Dizaynı ======== */
+
+.app .app-bottom {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    margin-top: 100px;
+}
+
+
+.app .app-bottom .image {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+    transform: translateY(50px);
+}
+
+.app .app-bottom .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.app .app-bottom .context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+
+}
+
+.app .app-bottom .context h1 {
+    font-size: 70px;
+    color: #FF8A00;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.app .app-bottom .context p {
+    width: 420px;
+    color: #757575;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Düymələrin ana qutusu */
+.app .app-bottom .context .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Hər bir ağ düymə bloku */
+.app .app-bottom .context .buttons .img-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    min-width: 220px;
+    transition: 0.3s;
+}
+
+.app .app-bottom .context .buttons .img-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* Düymə daxilindəki ikon */
+.app .app-bottom .context .buttons .img-icon img {
+    width: 35px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Yazıların düzülüşü */
+.app .app-bottom .context .buttons .icon-context {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.app .app-bottom .context .buttons .icon-context h3 {
+    font-size: 10px;
+    margin: 0;
+    color: #888;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.app .app-bottom .context .buttons .icon-context h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.app-eli {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(350px);
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #FFB30E;
+    z-index: 0;
+    clip-path: path("M0,0 Q800,240 1600,0 L1600,260 L0,260 Z");
+}
+
+
+.recept {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.recept .item {
+    width: 80%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    box-shadow: 1px 5px 10px #757575, -1px -5px 10px #757575;
+    border-radius: 10px;
+}
+
+.recept .item .context {
+    width: 34%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.recept .item .context h2 {
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.recept .item .context h2 span {
+    color: #ff8036;
+}
+
+.recept .item .context p {
+    margin-top: 7px;
+    font-size: 20px;
+    color: #adababd1;
+}
+
+.recept .item .context button {
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    background: linear-gradient(to right, #ffae00, #ff8036);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin-top: 80px;
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 1px 3px 10px #ffb3009b, -1px -3px 10px #ffb300ad;
+
+}
+
+.recept .item .image {
+    width: 66%;
+    height: 100%;
+    border-top-right-radius: 10px;
+}
+
+.recept .item .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.recept .item .image img:nth-child(1) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.recept .item .image img:nth-child(2) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.recept .item .image img:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
