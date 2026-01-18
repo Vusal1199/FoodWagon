@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="style.css">
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -35,7 +38,9 @@
             </div>
 
         </div>
-
+        <div class="responsive">
+            <i class='bx bx-menu'></i>
+        </div>
     </header>
 
     <!-- SiteHome Hissəsi -->
@@ -519,7 +524,6 @@
                         <i class='bx bxs-coupon'></i>
                         <span>10% <b>off</b></span>
                     </div>
-
                     <div class="sub-info-2">
                         <i class='bx bxs-time'></i>
                         <span>Fast</span>
@@ -620,11 +624,16 @@
         </div>
     </section>
 
-    <!-- Application Hissəsi -->
+
+
+    <!-- Application Section -->
     <section class="app">
+        <article class="marker">
+            <div class="mark-top"></div>
+            <div class="mark-bottom"></div>
+        </article>
         <article class="app-sub">
             <article class="app-barner">
-
 
                 <!-- Item 1 -->
                 <div class="item">
@@ -640,7 +649,6 @@
                     <hr>
                 </div>
 
-
                 <!--Item 2  -->
                 <div class="item">
                     <div class="image">
@@ -655,7 +663,6 @@
                     <hr>
                 </div>
 
-
                 <!-- Item 3 -->
                 <div class="item">
                     <div class="image">
@@ -669,46 +676,42 @@
                     </div>
                 </div>
             </article>
+        </article>
 
-            <!-- App Buttom -->
+        <!-- App Buttom -->
 
-            <article class="app-bottom">
-                <div class="image">
-                    <img src="image/TovuzBurgermob.png" alt="">
-                </div>
+        <article class="app-bottom">
+            <div class="image">
+                <img src="image/TovuzBurgermob.png" alt="">
+            </div>
 
-                <div class="context">
-                    <h1>Install the app</h1>
-                    <p>
-                        It`s never been easier to order food. Look for the finest discounts and you`ll
-                        be lost in a world of delectable food.
-                    </p>
+            <div class="context">
+                <h1>Install the app</h1>
+                <p>
+                    It`s never been easier to order food. Look for the finest discounts and you`ll
+                    be lost in a world of delectable food.
+                </p>
 
-                    <div class="buttons">
-                        <div class="img-icon">
-                            <img src="image/googleplay.png" alt="Google Play">
-                            <div class="icon-context">
-                                <h3>GET IT ON</h3>
-                                <h1>GOOGLE PLAY</h1>
-                            </div>
+                <div class="buttons">
+                    <div class="img-icon">
+                        <img src="image/googleplay.png" alt="Google Play">
+                        <div class="icon-context">
+                            <h3>GET IT ON</h3>
+                            <h1>GOOGLE PLAY</h1>
                         </div>
+                    </div>
 
-                        <div class="img-icon">
-                            <img src="image/apple.png" alt="App Store">
-                            <div class="icon-context">
-                                <h3>Download on the</h3>
-                                <h1>App Store</h1>
-                            </div>
+                    <div class="img-icon">
+                        <img src="image/apple.png" alt="App Store">
+                        <div class="icon-context">
+                            <h3>Download on the</h3>
+                            <h1>App Store</h1>
                         </div>
                     </div>
                 </div>
-            </article>
-
-            <!-- App Elipse -->
-            <div class="app-eli"></div>
+            </div>
         </article>
     </section>
-
     <!-- Recept -->
 
     <section class="recept">
@@ -724,14 +727,14 @@
                 </button>
             </div>
             <div class="image">
-                <img src="image/recept1.webp" alt="">
+                <img src="image/recept1.webp" alt="" id="item1">
             </div>
         </article>
 
         <!-- ITEM 2 -->
         <article class="item">
             <div class="image">
-                <img src="image/recept2.jpg" alt="">
+                <img src="image/recept2.jpg" alt="" id="item2">
             </div>
             <div class="context">
                 <h2>Celebrate porties with <span>Friend Chicken</span></h2>
@@ -746,7 +749,6 @@
             </div>
         </article>
 
-
         <!-- ITEM 3 -->
         <article class="item">
             <div class="context">
@@ -760,10 +762,142 @@
                 </button>
             </div>
             <div class="image">
-                <img src="image/recept3.jpg" alt="">
+                <img src="image/recept3.jpg" alt="" id="item3">
             </div>
         </article>
     </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe">
+        <div class="context">
+            <h1>Are you ready to order with the best deals?</h1>
+            <button>
+                PROCEED THE ORDER
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="context">
+
+            <article class="top">
+                <h1>Our top sities</h1>
+                <div class="item-section">
+                    <!-- ITEM 1 -->
+                    <div class="item">
+                        <a href="#">Qazax</a>
+                        <a href="#">Ağstafa</a>
+                        <a href="#">Tovuz</a>
+                        <a href="#">Şəmkir</a>
+                        <a href="#">Gədəbəy</a>
+                    </div>
+                    <!-- ITEM 2 -->
+                    <div class="item">
+                        <a href="#">Gəncə</a>
+                        <a href="#">Goranboy</a>
+                        <a href="#">Yevlax</a>
+                        <a href="#">Göygül</a>
+                        <a href="#">Mingəçevir</a>
+                    </div>
+                    <!-- ITEM 3 -->
+                    <div class="item">
+                        <a href="#">Qəbələ</a>
+                        <a href="#">Qusar</a>
+                        <a href="#">Quba</a>
+                        <a href="#">Şabran</a>
+                        <a href="#">Xaçmaz</a>
+                    </div>
+                    <!-- ITEM 4 -->
+                    <div class="item">
+                        <a href="#">Bakı</a>
+                        <a href="#">Xırdalan</a>
+                        <a href="#">Sumqayıt</a>
+                        <a href="#">SeaBreeze</a>
+                        <a href="#">Abşeron</a>
+                    </div>
+                    <!-- ITEM 5 -->
+                    <div class="item">
+                        <a href="#">Naxçıvan</a>
+                        <a href="#">Şərur</a>
+                        <a href="#">Şahbuz</a>
+                        <a href="#">Culfa</a>
+                        <a href="#">Ordubad</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Ayırıcı Xətt -->
+            <hr>
+
+            <article class="center">
+                <div class="center-right">
+                    <div class="item">
+                        <h1>Company</h1>
+                        <div class="sub-item">
+                            <a href="#">About Us</a>
+                            <a href="#">Team</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h1>Contact</h1>
+                        <div class="sub-item">
+                            <a href="#">Help & Support</a>
+                            <a href="#">Partner with us</a>
+                            <a href="#">Ride with us</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h1>Legal</h1>
+                        <div class="sub-item">
+                            <a href="#">Team & Conditions</a>
+                            <a href="#">Refund & Cancellation</a>
+                            <a href="#">Provacy Policy</a>
+                            <a href="#">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center-left">
+                    <h3>FOLLOW US</h3>
+                    <div class="social">
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-youtube'></i>
+                        <i class='bx bxl-tiktok'></i>
+                        <i class='bx bxl-linkedin-square'></i>
+                    </div>
+                    <span>Recieve exlcusive offers in your mail box</span>
+
+                    <div class="search">
+                        <i class='bx bx-envelope'></i>
+                        <input type="text" placeholder="       Enter Your Email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </article>
+            <!-- Ayrıcı Xətt -->
+            <hr>
+            <article class="bottom">
+                <div class="left">
+                    <p>
+                        All right Reserved
+                        <i class='bx bx-copyright'></i>
+                        <span>My Company, 2026</span>
+                    </p>
+                </div>
+                <div class="right">
+                    Made with
+                    <i class='bx bxs-heart bx-tada'></i>
+                    <span>by TovuzBurger</span>
+                </div>
+            </article>
+        </div>
+    </footer>
 </body>
 
 </html>

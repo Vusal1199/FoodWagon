@@ -20,8 +20,16 @@
     box-sizing: border-box;
 }
 
+html,
 body {
+    overflow-x: hidden;
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header .responsive {
+    display: none;
 }
 
 header {
@@ -923,21 +931,48 @@ header .search-login .login span {
     font-size: 25px;
 }
 
-/* Application Hissəsi */
+
+/* =============Application Section=============== */
 .app {
-    position: relative;
-    z-index: 2;
+    background: linear-gradient(to right, #ffae00, #ff8036);
+    border: none;
     width: 100%;
     height: 100vh;
-    padding: 0 55px;
+}
+
+.app .marker {
+    width: 100%;
+    height: 83%;
     display: flex;
     flex-direction: column;
-    background-color: #FEEFD3;
+    position: relative;
+    z-index: 1;
+}
+
+.app .marker .mark-top {
+    background-color: #ffe5dd;
+    width: 100%;
+    height: 65%;
+}
+
+.app .marker .mark-bottom {
+    background-color: #ffe5dd;
+    width: 100%;
+    height: 35%;
+    border-bottom-left-radius: 180%;
+    border-bottom-right-radius: 30%;
+}
+
+.app .app-sub {
+    position: relative;
+    z-index: 2;
+    top: -78%;
+    margin-left: 33%;
+
 }
 
 .app .app-barner {
     width: 100%;
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -946,8 +981,6 @@ header .search-login .login span {
     height: 180px;
     background-color: #fff;
     border-radius: 15px;
-    margin-top: 40px;
-    margin-left: 240px;
 }
 
 .app .app-barner .item {
@@ -993,8 +1026,6 @@ header .search-login .login span {
     outline: none;
 }
 
-/* ======= Application`un Barner Hissəsini Dizaynı ======== */
-
 .app .app-bottom {
     position: relative;
     z-index: 2;
@@ -1002,9 +1033,10 @@ header .search-login .login span {
     display: flex;
     flex-direction: row;
     gap: 150px;
-    margin-top: 100px;
+    transform: translateY(-150%);
+    align-items: center;
+    justify-content: center;
 }
-
 
 .app .app-bottom .image {
     width: 400px;
@@ -1102,19 +1134,6 @@ header .search-login .login span {
     line-height: 1.2;
 }
 
-.app-eli {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(350px);
-    left: 0;
-    width: 100%;
-    height: 600px;
-    background-color: #FFB30E;
-    z-index: 0;
-    clip-path: path("M0,0 Q800,240 1600,0 L1600,260 L0,260 Z");
-}
-
-
 .recept {
     width: 100%;
     height: auto;
@@ -1133,6 +1152,7 @@ header .search-login .login span {
     gap: 30px;
     box-shadow: 1px 5px 10px #757575, -1px -5px 10px #757575;
     border-radius: 10px;
+
 }
 
 .recept .item .context {
@@ -1180,7 +1200,6 @@ header .search-login .login span {
 .recept .item .image {
     width: 66%;
     height: 100%;
-    border-top-right-radius: 10px;
 }
 
 .recept .item .image img {
@@ -1188,18 +1207,248 @@ header .search-login .login span {
     height: 100%;
 }
 
-.recept .item .image img:nth-child(1) {
+.recept .item .image #item1 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.recept .item .image img:nth-child(2) {
+.recept .item .image #item2 {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-
-.recept .item .image img:nth-child(3) {
+.recept .item .image #item3 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+/* Subscribe */
+.subscribe {
+    background: url(image/subscribe.jpg);
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+.subscribe .context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 91px;
+}
+
+.subscribe .context h1 {
+    font-size: 70px;
+    color: #fff;
+    width: 728px;
+    height: 234px;
+    text-align: center;
+}
+
+.subscribe .context button {
+    background-color: #f17228;
+    border: 1px solid #fff;
+    outline: none;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 50px 35px;
+}
+
+footer .context {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 80px;
+}
+
+footer .context .top h1 {
+    font-size: 35px;
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+footer .context .top .item-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer .context .top a {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3 ease;
+    padding: 2px 0;
+}
+
+footer .context .top a:hover {
+    color: #ffae00;
+    text-decoration: underline;
+}
+
+footer .context .center {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+footer .context .center-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+
+}
+
+footer .context .center-right .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+footer .context .center-right .item h1 {
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+footer .context .center-right .item:nth-child(2) a {
+    transform: translateY(-18px);
+}
+
+footer .context .center-right .item a {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 18px;
+}
+
+footer .context .center-right .item a:hover {
+    color: #ffae00;
+    text-decoration: underline;
+}
+
+footer .context .center-left {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(25px);
+    margin-left: 100px;
+}
+
+footer .context .center-left h3 {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+footer .context .center-left .social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer .context .center-left .social i {
+    font-size: 22px;
+    font-weight: 400;
+    color: #aba9a9;
+    gap: 15px;
+    padding: 5px 0;
+}
+
+footer .context .center-left .social i:hover {
+    transition: 0.7s ease;
+}
+
+footer .context .center-left span {
+    color: #aba9a9;
+    font-size: 20px;
+    padding: 7px 0;
+}
+
+
+footer .context .center-left .search {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    position: relative;
+}
+
+footer .context .center-left .search i {
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #aba9a9;
+    transform: translateY(10px);
+    z-index: 2;
+}
+
+footer .context .center-left .search input {
+    width: 220px;
+    height: 30px;
+    background-color: #424141;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    transform: translateY(10px);
+}
+
+footer .context .center-left .search button {
+    border: none;
+    outline: none;
+    background-color: #FF8A00;
+    width: 110px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-shadow: 1px 1px 5px #fff;
+    transform: translateY(5px);
+}
+
+footer .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+footer .bottom .left p {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .bottom .left p span {
+    font-weight: 700;
+}
+
+footer .bottom .right {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .bottom .right i {
+    color: #ffae00;
+}
+
+footer .bottom .right span {
+    font-weight: 700;
 }
