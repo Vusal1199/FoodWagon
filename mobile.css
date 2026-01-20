@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
 
     /* Header - Elementləri səliqəyə salırıq */
     header {
@@ -160,7 +160,7 @@ body {
     .pop-item {
         height: 100% !important;
         position: relative;
-        left: 17%;
+        left: 22.5%;
         padding: 50px 0 !important;
     }
 
@@ -211,6 +211,9 @@ body {
     .restaurant h1 {
         font-size: 40px !important;
         padding-bottom: 15px !important;
+        position: relative;
+        left: 5% !important;
+        text-align: center !important;
     }
 
     .restaurant .sub-restaurant {
@@ -259,7 +262,7 @@ body {
         display: grid !important;
         grid-template-columns: repeat(1, 1fr) !important;
         position: relative;
-        margin-top: 100%;
+        top: 80% !important;
     }
 
     .app .app-bottom .image {
@@ -267,6 +270,7 @@ body {
         height: 100px;
         transform: translateY(70%) !important;
         margin-left: 34% !important;
+        position: relative;
     }
 
     .app .app-bottom .image img {
