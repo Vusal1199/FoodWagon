@@ -500,9 +500,10 @@ body {
     .center {
         width: 100% !important;
         height: 100% !important;
-        padding: 100px !important;
+        padding: 100px 0 !important;
         position: relative;
-        left: -170% !important;
+        display: flex;
+        justify-content: center !important;
 
     }
 
