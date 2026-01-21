@@ -498,11 +498,28 @@ body {
     }
 
     .center {
-        width: 70% !important;
+        width: 60% !important;
         height: 100% !important;
         padding: 100px !important;
         position: relative;
-        left: -155% !important;
+        left: -140% !important;
+
+    }
+
+    .center .center-left {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .center span {
+        width: 220px !important;
+    }
+
+    .center .center-left .search {
+        display: flex;
+        flex-direction: column !important;
     }
 
     .center .center-right {
