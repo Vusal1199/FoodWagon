@@ -15,6 +15,7 @@ body {
     background-color: #fff;
 }
 
+/* Yalnız bir əsas media operatoru istifadə edirik */
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
     /* HEADER - Responsiv menyu üçün hazırlıq */
@@ -29,7 +30,6 @@ body {
     header .location,
     header .search-login {
         display: none !important;
-        /* Mobildə bu hissələri gizlədirik */
     }
 
     header .responsive {
@@ -42,7 +42,6 @@ body {
     }
 
     /* HOME SECTION - Sənin Oppo ekranına tam uyğunlaşma */
-
     .home {
         height: auto !important;
     }
@@ -51,8 +50,6 @@ body {
         width: 100% !important;
         max-width: 100% !important;
         left: 0 !important;
-        width: auto !important;
-        /* Sürüşməni ləğv etdik */
         padding: 40px 20px !important;
         display: flex !important;
         flex-direction: column !important;
@@ -63,7 +60,6 @@ body {
 
     .home .home-inset h1 {
         font-size: 38px !important;
-        /* 50px-dən endirdik ki, sətirdən çıxmasın */
         width: 100% !important;
     }
 
@@ -73,10 +69,9 @@ body {
         margin-bottom: 20px;
     }
 
-    /* Giriş və Düymə hissəsi */
+    /* Giriş və Düymə hissəsi - Buradakı daxili @media silindi və kodlar bura birləşdirildi */
     .home .home-inset .input-deliver {
         width: 100% !important;
-        /* 390px-dən 100%-ə keçid */
         height: auto !important;
         padding: 15px !important;
         background: #fff;
@@ -86,30 +81,25 @@ body {
         gap: 10px !important;
     }
 
-    .home .home-inset .input-container {
-        width: 100% !important;
-
+    .input-btn {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        width: 80% !important;
+        position: relative;
+        left: 10px !important;
+        /* Mərkəzləmə üçün 100% edildi */
     }
 
-    @media screen and (max-width: 768px) {
-        .input-btn {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            gap: 10px !important;
-            width: 90% !important;
-        }
+    .input-container {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
 
-        .input-container {
-            max-width: 88% !important;
-            width: 88% !important;
-        }
-
-        .btn {
-            max-width: 75% !important;
-            width: 75% !important;
-            /* Hər ikisini tam en edir ki, alt-alta düşsünlər */
-        }
+    .btn {
+        max-width: 100% !important;
+        width: 100% !important;
     }
 
     .home .home-inset .input-container input {
@@ -119,7 +109,6 @@ body {
 
     .home .home-inset .btn {
         position: static !important;
-        /* Absolute-dən xilas olduq */
         margin: 0 !important;
         width: 100% !important;
         height: 50px !important;
@@ -132,12 +121,10 @@ body {
     .menu {
         width: 100% !important;
         height: auto !important;
-        padding: 50px 0 !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         left: 0 !important;
-        /* 21% ləğv edildi */
         top: 0 !important;
         padding: 50px 20px !important;
         background-color: transparent !important;
@@ -145,10 +132,13 @@ body {
 
     .menu .item {
         width: 100% !important;
-        height: 500px !important;
+        height: auto !important;
+        /* Düymənin kəsilməməsi üçün auto edildi */
+        min-height: 450px !important;
         max-width: 300px !important;
         margin-bottom: 50px !important;
-        padding: 50px 0 !important;
+        padding: 20px 0 !important;
+        /* Padding tənzimləndi */
     }
 
     .menu .item .image,
@@ -166,8 +156,6 @@ body {
         transform: translateY(-25px) !important;
     }
 
-
-
     /* HOW IT WORKS - Addım-addım bölməsi */
     .how-work {
         width: 100% !important;
@@ -175,7 +163,6 @@ body {
         padding: 50px 20px !important;
         text-align: center !important;
     }
-
 
     .how-work h1 {
         font-size: 35px !important;
@@ -188,7 +175,6 @@ body {
         flex-direction: column !important;
         align-items: center !important;
         left: 0 !important;
-        /* 26% ləğv edildi */
         margin-top: 0 !important;
         gap: 30px !important;
     }
@@ -207,20 +193,22 @@ body {
 
     .how-work .sub-work .item span {
         width: 100% !important;
-        /* 350px ləğv edildi */
         font-size: 16px !important;
     }
 
-    /* POPULAR ITEMS - Yemək siyahısı */
+    /* POPULAR ITEMS - Mərkəzləmə düzəldildi */
     .pop-item {
         max-width: 100% !important;
-        width: 150% !important;
+        width: 120% !important;
         height: auto !important;
         padding: 40px 20px !important;
         display: flex !important;
+        flex-direction: column !important;
         align-items: center !important;
-        transform: translateX(50px);
         justify-content: center !important;
+        transform: none !important;
+        position: relative;
+        left: 50px !important;
     }
 
     .pop-item h1 {
@@ -234,7 +222,6 @@ body {
         align-items: center !important;
         gap: 20px !important;
     }
-
 
     .pop-item .food-items .item:nth-child(1),
     .item:nth-child(7) {
@@ -252,5 +239,130 @@ body {
     .pop-item .food-items .item .image {
         width: 100% !important;
         height: 180px !important;
+    }
+
+    .restaurant {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 100% !important;
+        position: relative;
+        left: 35px !important;
+    }
+
+    .restaurant h1 {
+        position: relative;
+        left: -22px !important;
+    }
+
+    .restaurant .sub-restaurant {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+
+    .search-food {
+        width: 100% !important;
+    }
+
+    .search-food h1 {
+        position: relative;
+        right: 20px !important;
+    }
+
+    .search-food .page-scrool {
+        display: none !important;
+    }
+
+    .search-food .item-box {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .search-food .item-box .item .image {
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .search-food .item-box .item .image img {
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+
+    .app {
+        width: 100% !important;
+        height: 100 !important;
+        position: relative;
+    }
+
+    .app .app-barner {
+        display: none !important;
+    }
+
+    .app .app-bottom {
+        width: 100% !important;
+        height: auto !important;
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        position: relative;
+        top: 59% !important;
+        left: -20px !important;
+    }
+
+    .app .app-bottom .image {
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .app .app-bottom .image img {
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .app .app-bottom .context h1 {
+        font-size: 50px !important;
+        position: relative;
+        top: -150px !important;
+        left: -10px !important;
+    }
+
+    .app .app-bottom .context p {
+        font-size: 22px !important;
+        width: 70% !important;
+        position: relative;
+        top: -160px !important;
+    }
+
+    .app .app-bottom .buttons {
+        width: 70% !important;
+        position: relative;
+        top: -150px !important;
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .app .app-bottom .buttons .img-icon {
+        width: 140px !important;
+        height: 50px !important;
+
+
+    }
+
+    .app .app-bottom .buttons .img-icon .icon-context {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .app .app-bottom .buttons .img-icon .icon-context h3 {
+        font-size: 15px !important;
+    }
+
+    .app .app-bottom .buttons .img-icon .icon-context h1 {
+        font-size: 20px !important;
+        position: relative;
+        transform: translateY(146px) !important;
     }
 }
